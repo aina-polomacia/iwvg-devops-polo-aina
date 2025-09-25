@@ -12,6 +12,14 @@ class SearchesTest {
     }
 
     @Test
+    void testFindFirstDecimalFractionByUserName() {
+        assertThat(new Searches().findFirstDecimalFractionByUserName("Oscar"))
+                .isEqualTo(0.0);
+        assertThat(new Searches().findFirstDecimalFractionByUserName("Paula"))
+                .isEqualTo(1.0);
+    }
+
+    @Test
     void testFindFractionSubtractionByUserName() {
         Fraction result = new Searches().findFractionSubtractionByUserName("Ana");
         assertThat(result.getNumerator()).isEqualTo(22);
