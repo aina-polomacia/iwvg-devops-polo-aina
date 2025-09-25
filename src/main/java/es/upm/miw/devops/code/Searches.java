@@ -22,7 +22,7 @@ public class Searches {
         return new UsersDatabase().findAll()
                 .filter(user -> !user.getFractions().isEmpty()
                         && user.getFractions().stream().allMatch(Fraction::isProper))
-                .map(User::getId);
+                .map(User::getId); 
     }
 
     public Fraction findFractionSubtractionByUserName(String name) {
