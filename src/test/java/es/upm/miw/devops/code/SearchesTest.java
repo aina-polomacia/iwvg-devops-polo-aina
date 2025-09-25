@@ -20,6 +20,12 @@ class SearchesTest {
     }
 
     @Test
+    void testFindUserIdByAllProperFraction() {
+        assertThat(new Searches().findUserIdByAllProperFraction().toList())
+                .containsExactly();
+    }
+
+    @Test
     void testFindFractionSubtractionByUserName() {
         Fraction result = new Searches().findFractionSubtractionByUserName("Ana");
         assertThat(result.getNumerator()).isEqualTo(22);

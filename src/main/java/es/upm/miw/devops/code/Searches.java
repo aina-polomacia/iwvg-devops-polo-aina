@@ -1,6 +1,5 @@
 package es.upm.miw.devops.code;
 
-import java.util.Objects;
 import java.util.stream.Stream;
 
 public class Searches {
